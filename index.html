@@ -15,9 +15,32 @@
         body {
             background: url('https://github.com/edwardabercromby/emqore.org/blob/main/emqorelogo5.jpg?raw=true') no-repeat center center fixed;
             background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .login-button {
+            position: absolute;
+            bottom: 30%;
+            text-align: center;
+            padding: 12px 24px;
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+            background: transparent;
+            border: 2px solid white;
+            text-transform: uppercase;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .login-button:hover {
+            background: white;
+            color: #6a1b9a;
         }
     </style>
 </head>
 <body>
+    <a href="login.html" class="login-button">Member Log-In</a>
 </body>
 </html>
