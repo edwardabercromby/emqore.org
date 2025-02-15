@@ -15,37 +15,36 @@
         body {
             background: url('https://github.com/edwardabercromby/emqore.org/blob/main/emqorelogo6.4.jpg?raw=true') no-repeat center center fixed;
             background-size: cover;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
         }
-        .navbar {
+        .nav-bar {
             position: absolute;
             top: 10px;
-            width: 100%;
+            left: 50%;
+            transform: translateX(-50%);
             display: flex;
-            justify-content: center;
             gap: 20px;
         }
-        .navbar button {
+        .nav-bar button {
             background-color: white;
             border: none;
             padding: 10px 20px;
             font-size: 16px;
             cursor: pointer;
             border-radius: 5px;
-            transition: background 0.3s;
+            font-weight: bold;
         }
-        .navbar button:hover {
-            background-color: lightgray;
+        .nav-bar button:hover {
+            background-color: #ddd;
         }
     </style>
 </head>
 <body>
-    <div class="navbar">
-        <button onclick="location.href='#about'">ABOUT</button>
-        <button onclick="location.href='#contact'">CONTACT</button>
-        <button onclick="location.href='#portal'">PORTAL</button>
+
+    <div class="nav-bar">
+        <button onclick="window.location.href='https://github.com/edwardabercromby/emqore.org/blob/main/Doc3.jpg?raw=true'">ABOUT</button>
+        <button onclick="window.location.href='https://github.com/edwardabercromby/emqore.org/blob/main/contacy.jpg?raw=true'">CONTACT</button>
+        <button onclick="window.location.href='#portal'">PORTAL</button>
     </div>
+
 </body>
 </html>
